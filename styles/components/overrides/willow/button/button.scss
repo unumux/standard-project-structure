@@ -1,7 +1,7 @@
 @mixin base() {
-    
+    padding: 20px 40px;
 }
 
-.willow-button {
+&-button {
     @include base;
 }

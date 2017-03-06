@@ -1,10 +1,10 @@
 @mixin base() {
-
+    background-color: $component-em-background-color;
+    color: $component-text-inverse;
 }
 
 .my-card {
     @include base;
-
     @import "heading";
     @import "content";
     @import "actions";
