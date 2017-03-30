@@ -15,7 +15,7 @@ styles/
 | |-- overrides                         # For overriding component styles from external libraries - willow, bootstrap
 |   |-- _overrides.scss                 # Imports files from each library folder
 |
-|   |-- willow                          # Each library used gets their own folder for their overrides
+|   |-- willow                          # Each library used gets their own folder for overrides
 |     |-- _willow.scss                  # Imports files for each component
 |
 |     |-- primary-nav/                  # Each library component gets their own folder
@@ -25,23 +25,24 @@ styles/
 |-- theme/                              # For theme styles: base-elements & variables - new and library overrides
 | |-- _theme.scss                       # Imports files from each sub-folder
 |
-| |-- base-elements/                    # Base element and normalizing styles
-|   |-- _base-elements.scss             # HTML tag styles
-|   |-- _normalize.scss                 # Normalize file - name any files like this after the source library
+| |-- base-elements/                    # Base element styles
+|   |-- _base-elements.scss             # styles on element tags
 |
 | |-- variables/                        # All variables
 |   |-- _variables.scss                 # Imports files from each sub-folder
 |
-|   |-- colors/                         # Color specific variables
-|     |-- _colors.scss                  # Imports palette files
-|     |-- _color-palette.scss           # Defines HEX colors as variables
+|   |-- constants/                      # The starting point for variables
+|     |-- _constants.scss               # Imports all files in constants/
+|     |-- _colors.scss                  # Defines HEX colors as variables
+|     |-- _fonts.scss                   # Imports fonts and sets them equal to font variables
 |     |-- _theme-palette.scss           # Assigns priority to each color-palette variable
 |     |-- _component-palette.scss       # Assigns theme-palette variables to component parts/pieces - these variables are used in component style files for property values.
 |
-|   |-- fonts/                          # Font specific variables
-|       _font-variables.scss            # Defines font families and variables for groups of font specific properties
+|   |-- theme-specific/                 # Abstracts the constant variables to more generic variables
+|       _theme-specific.scss            # For generic variables like primary-background-color
 |
-|   |-- sizing/                         # Sizing specific variables
-|       _sizing-variables.scss          # Defines padding, margin, border, etc. variables
+|   |-- component-specific/             # Abstracts the theme-specific variables to apply to specific components
+|       _component-name.scss            # Defines variables for a specific component, such as card-background-color
+|       _another-component-name.scss    # Each component has a separate file
 ```
 
