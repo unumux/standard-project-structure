@@ -1,2 +1,2 @@
-*{box-sizing:border-box}body{background:#dedede;color:#111}
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");a,a:visited{color:red}.card{background-color:#edb833;color:#333;font-family:Slabo,Times,serif;padding:15px 25px 20px}.card__actions{list-style:none;padding:0}.willow-button{padding:20px 40px}
 /*# sourceMappingURL=styles.min.css.map */

@@ -1,0 +1,17 @@
+@mixin base() {
+    background-color: $component-card-background-color;
+    color: $component-card-text-color;
+    font-family: $component-card-font-family;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.card {
+    @include base;
+    @import "heading";
+    @import "content";
+    @import "actions";
+    @import "action";
+}

@@ -1,9 +1,5 @@
-//themes
-//external themes first (willow) followed by project themes - allows for project to override themes
-@import "node-modules/@willow/theme-unum-unum"; //this is a fake path for now and will break the build tools
+//import project custom/overwritten theme styles
 @import "theme/theme";
 
-//components
-//external component first (willow) followed by project components - allows for project to override components
-@import "node-modules/@willow/components"; //this is a fake path for now and will break the build tools
+//import project custom/overwritten components
 @import "components/components";

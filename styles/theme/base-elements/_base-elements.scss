@@ -1,6 +1,5 @@
-@import "normalize";
-
 // overrides color for all anchor elements
-a {
-    color: red; //the default color from the theme is black.
+a,
+a:visited {
+    color: red; //the default color from the theme is a blue-ish color.
 }
