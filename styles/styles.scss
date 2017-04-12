@@ -1,5 +1,10 @@
-//import project custom/overwritten theme styles
-@import "theme/theme";
+//import project custom/overwritten variables
+@import "variables";
+
+@import "willow-theme";
+
+
+@import "base-elements";
 
 //import project custom/overwritten components
 @import "components/components";
